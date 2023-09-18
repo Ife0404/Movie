@@ -1,0 +1,26 @@
+.button {
+    margin: 6px 6px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    background-color: #17cf97;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    text-decoration: none;
+    color: white;
+    transition-duration: 0.5s;
+}
+
+.button:hover {
+    background-image: linear-gradient(to left, #17cf97, black);
+    transform: scale(1.1);
+    border: none;
+    color: #fff;
+}
