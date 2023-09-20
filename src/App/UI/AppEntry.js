@@ -1,11 +1,11 @@
 import React from 'react'
-import Navbar from './Components/Navbar/Navbar'
+import IndexRouter from './../Route/IndexRouter'
+
 
 const AppEntry = () => {
     return (
         <div>
-            <Navbar />
-            <p>AppEntry</p>
+            <IndexRouter />
         </div>
     )
 }
