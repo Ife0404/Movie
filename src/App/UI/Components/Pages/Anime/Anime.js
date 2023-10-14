@@ -1,16 +1,14 @@
 import React from 'react';
 import './Anime.css';
-import Navbar from '../../Navbar/Navbar';
+import Movies from '../Movies/Movies';
 
 function Anime() {
   return (
-
-    <div>
-      <Navbar />
-      <div className='Anime'></div>
+    <div className="Anime">
+      <Movies />
     </div>
+  );
 
-  )
 }
 
 export default Anime

@@ -28,7 +28,7 @@ ul {
 }
 
 .navbarHidden {
-display: none;
+    display: none;
 }
 
 .Navbar li a {
@@ -38,20 +38,43 @@ display: none;
     color: #fff;
 }
 
-.Navbar li a:hover,
-.Navbar li a.active {
+/* Add styles for the navbar links */
+.Navbar ul li a:hover,
+.Navbar ul li a.active {
     color: #17cf97;
 }
 
-.Navbar li a:hover::after,
-.Navbar li a.active::after {
+/* Add styles for the hover effect (underlining) */
+.Navbar ul li a:hover::after,
+.Navbar ul li a.active::after {
     content: "";
     width: 30%;
     height: 2px;
     background: #17cf97;
     position: absolute;
     bottom: -4px;
-    left: 20px;
+    left: 0;
+    /* Changed this from 20px to 0 to align with the link text */
+    transition: all 0.3s;
+    /* Added a transition for smooth animation */
+}
+
+/* Optional: Remove the underline when not hovered */
+.Navbar ul li a::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: transparent;
+    /* Change to transparent */
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transition: all 0.3s;
+}
+
+/* Optional: Add an underline for active links by default */
+.Navbar ul li a.active::after {
+    background: #17cf97;
 }
 
 .Navbar img {
@@ -74,7 +97,7 @@ display: none;
     .navbarHidden {
         display: contents;
     }
-    
+
     .navbar {
         background-color: #1b2430;
         color: #fff;

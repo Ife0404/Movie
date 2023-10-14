@@ -1,0 +1,303 @@
+.movie-card {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #1b2430;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.movie-poster {
+    width: 130px;
+    height: 225px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.movie-details {
+    flex: 0.8;
+}
+
+.movie-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #17C497;
+    margin: 1;
+}
+
+.movie-release-date,
+.movie-genre,
+.movie-desc,
+.movie-ratings {
+    font-size: 14px;
+    color: white;
+    margin: 5px 0;
+}
+
+.movie-desc {
+    font-style: italic;
+}
+
+.movie-details p {
+    color: white;
+}
+
+.movie-label {
+    font-weight: bold;
+}
+
+.movie-rating {
+    display: flex;
+    align-items: center;
+}
+
+.movie-label {
+    margin-right: 8px;
+}
+
+.rating-value {
+    display: flex;
+    align-items: center;
+}
+
+.rating-value .hi-star {
+    color: gold;
+}
+
+
+.movie-link {
+    cursor: pointer;
+}
+
+.movie-link:hover {
+    transform: scale(1.01);
+    animation: borderTop 0.5s linear;
+    color: #17cF97;
+}
+
+.movie-card:hover {
+    transform: scale(1.01);
+    animation: borderTop 0.5s linear;
+    border-top: 4px solid #17cF97;
+}
+
+/* 
+.movie-card{
+    width: 310px;
+    height: 460px;
+    margin: 1.5rem;
+  
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    border: none;
+  
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+    box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
+  }
+  
+  .movie-card div:nth-of-type(1) {
+    position: absolute;
+    padding: 16px;
+    width: 100%;
+    opacity: 0;
+    top: 0;
+    color: #f9d3b4;
+  }
+  
+  .movie-card:hover {
+    box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05, 1.05);
+  }
+  
+  .movie-card div:nth-of-type(2) {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .movie-card div:nth-of-type(2) img {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .movie-card div:nth-of-type(3) {
+    z-index: 2;
+    background-color: #343739;
+    padding: 16px 24px 24px 24px;
+  
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+  
+  .movie-card div:nth-of-type(3) span {
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: #f0f0f0;
+  }
+  
+  .movie-card div:nth-of-type(3) h3 {
+    margin-top: 5px;
+    font-family: "Roboto Slab", serif;
+    color: #f9d3b4;
+  }
+  
+  .movie-card:hover div:nth-of-type(2) {
+    height: 100%;
+    opacity: 0.3;
+  }
+  
+  .movie-card:hover div:nth-of-type(3) {
+    background-color: transparent;
+  }
+  
+  .movie-card:hover div:nth-of-type(1) {
+    opacity: 1;
+  } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .OpportunityCard {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    height: 230px;
+    margin-bottom: 1rem;
+    padding-block: 2rem;
+    box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.36);
+    border: 1px solid rgba(128, 128, 128, 0.162);
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.OpportunityCard:hover {
+    transform: scale(1.1);
+    animation: borderTop 0.5s linear;
+    border-top: 4px solid #FF7A00;
+}
+
+.sponsor-logo {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    border-radius: 50%;
+    margin-left: 5%;
+    text-align: center;
+    border: 1px solid var(--primary-color);
+}
+
+.sponsor-logo img {
+    height: 50px;
+    width: 55px;
+}
+
+.Opportunity-description {
+    padding-right: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Opportunity-description>div {
+    width: 60px;
+    border-radius: 10px;
+    background-color: #FF7A00;
+    color: white;
+    padding: 5px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.OpportunityCard .Opportunity-description p {
+    color: var(--secondary-color);
+}
+
+.OpportunityCard .Opportunity-description div~p {
+    color: var(--secondary-color);
+}
+
+.OpportunityCard .Opportunity-description h3 {
+    color: var(--secondary-color);
+}
+
+.OpportunityCard .Opportunity-description h2 {
+    word-spacing: -3px;
+    color: var(--primary-color);
+}
+
+@media (max-width:860px) {
+    .OpportunityCard {
+        gap: 20px;
+        height: 180px;
+    }
+
+    .OpportunityCard .Opportunity-description p {
+        font-size: 16px;
+    }
+
+    .OpportunityCard .Opportunity-description h2 {
+        font-size: 20px;
+
+    }
+
+    .OpportunityCard .Opportunity-description h3 {
+        font-size: 12px;
+    }
+
+    .OpportunityCard .Opportunity-description div~p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:390px) {
+
+
+    .OpportunityCard .Opportunity-description h2 {
+        line-height: 20px;
+        font-size: 16px;
+        word-spacing: 1px;
+    }
+
+
+} */
+
+/* .OpportunityCard{
+        height: 180px;
+    }
+    .OpportunityCard .Opportunity-description p{
+        font-size: 16px;
+    } */
+
+/* .OpportunityCard .Opportunity-description h3{
+        font-size: 12px;
+    }
+    .OpportunityCard .Opportunity-description div ~ p{
+        font-size: 12px;
+    } */

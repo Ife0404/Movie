@@ -5,16 +5,18 @@ import Anime from "../UI/Components/Pages/Anime/Anime";
 import Documentaries from "../UI/Components/Pages/Documentaries/Documentaries";
 import Movies from "../UI/Components/Pages/Movies/Movies";
 import Tvshows from "../UI/Components/Pages/TV Shows/Tvshows";
+import LoginAndSignup from "../UI/Components/Pages/LoginAndSignup/LoginAndSignup";
 
 const index = () => {
     return (
         <BrowserRouter>
             <Routes>
-            <Route Component={Home} path={"/"}></Route>
-            <Route Component={Anime} path={"/"}></Route>
-            <Route Component={Documentaries} path={"/"}></Route>
-            <Route Component={Movies} path={"/"}></Route>
-            <Route Component={Tvshows} path={"/"}></Route>
+                <Route Component={LoginAndSignup} path={"/"}></Route>
+                <Route Component={Home} path={"/home"}></Route>
+                <Route Component={Anime} path={"/anime"}></Route>
+                <Route Component={Documentaries} path={"/documentaries"}></Route>
+                <Route Component={Movies} path={"/movies"}></Route>
+                <Route Component={Tvshows} path={"/tv shows"}></Route>
             </Routes>
         </BrowserRouter>
     )
