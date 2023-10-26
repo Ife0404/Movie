@@ -4,6 +4,8 @@ import Navbar from '../../Navbar/Navbar';
 import MovieCard from '../../Card/MovieCard';
 import { movies } from '../../../../Constants/data';
 import { useNavigate } from 'react-router-dom';
+import Footer from '../../Footer/Footer';
+
 
 // Number of items to display per page
 
@@ -35,34 +37,37 @@ function Movies() {
   };
 
   return (
-    <div className="Movies">
+    <>
       <Navbar />
-      {currentItems.map((movie, index) => (
-        <MovieCard
-          key={index}
-          title={movie.title}
-          posterUrl={movie.image}
-          link={movie.link}
-          desc={movie.desc}
-          ratings={movie.ratings}
-          releaseDate={movie.releaseDate}
-          genre={movie.genre}
-          onClick={() => handleMovieCardClick(movie.link)} // Pass the movie link to the click handler
-        />
-      ))}
-      {/* Pagination component */}
-      <div className="pagination">
-        {Array.from({ length: totalPages }, (_, index) => (
-          <span
+      <div className="Movies">
+        {currentItems.map((movie, index) => (
+          <MovieCard
             key={index}
-            className={index + 1 === currentPage ? 'active' : ''}
-            onClick={() => handlePageChange(index + 1)}
-          >
-            {index + 1}
-          </span>
+            title={movie.title}
+            posterUrl={movie.image}
+            link={movie.link}
+            desc={movie.desc}
+            ratings={movie.ratings}
+            releaseDate={movie.releaseDate}
+            genre={movie.genre}
+            onClick={() => handleMovieCardClick(movie.link)} // Pass the movie link to the click handler
+          />
         ))}
+        {/* Pagination component */}
+        <div className="pagination">
+          {Array.from({ length: totalPages }, (_, index) => (
+            <span
+              key={index}
+              className={index + 1 === currentPage ? 'active' : ''}
+              onClick={() => handlePageChange(index + 1)}
+            >
+              {index + 1}
+            </span>
+          ))}
+        </div>
       </div>
-    </div>
+      <Footer />
+    </>
   );
 }
 

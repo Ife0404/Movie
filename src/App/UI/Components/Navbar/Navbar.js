@@ -45,7 +45,7 @@ function Navbar() {
                                 <li><a href={"/documentaries"}>Documentaries</a></li>
                                 <li><a href={"/anime"}>Anime</a></li>
                             </ul>
-                            <Button type="button" text={"Sign In"} class="sign-in" onClick={handleSignupNavigation} />
+                            <Button type="button" text={"Signup"} class="sign-in" onClick={handleSignupNavigation} />
 
                             {/* <div id='mobile'>
                                 <i className='fas fa-bars'></i>

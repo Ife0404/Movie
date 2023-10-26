@@ -3,6 +3,7 @@ import './Documentaries.css';
 import Navbar from '../../Navbar/Navbar';
 import MovieCard from '../../Card/MovieCard'; // 
 import { documentaries } from '../../../../Constants/data';
+import Footer from '../../Footer/Footer';
 
 function Documentaries() {
 
@@ -22,33 +23,38 @@ function Documentaries() {
   };
 
   return (
-    <div className="Documentaries">
+    <>
       <Navbar />
-      {currentItems.map((series, index) => (
-        <MovieCard
-          key={index}
-          title={series.title}
-          posterUrl={series.image}
-          link={series.link}
-          desc={series.desc}
-          ratings={series.ratings}
-          releaseDate={series.releaseDate}
-          genre={series.genre}
-        />
-      ))}
-      {/* Pagination component */}
-      <div className="pagination">
-        {Array.from({ length: totalPages }, (_, index) => (
-          <span
+      <div className="Documentaries">
+
+        {currentItems.map((series, index) => (
+          <MovieCard
             key={index}
-            className={index + 1 === currentPage ? 'active' : ''}
-            onClick={() => handlePageChange(index + 1)}
-          >
-            {index + 1}
-          </span>
+            title={series.title}
+            posterUrl={series.image}
+            link={series.link}
+            desc={series.desc}
+            ratings={series.ratings}
+            releaseDate={series.releaseDate}
+            genre={series.genre}
+          />
         ))}
+        {/* Pagination component */}
+        <div className="pagination">
+          {Array.from({ length: totalPages }, (_, index) => (
+            <span
+              key={index}
+              className={index + 1 === currentPage ? 'active' : ''}
+              onClick={() => handlePageChange(index + 1)}
+            >
+              {index + 1}
+            </span>
+          ))}
+        </div>
       </div>
-    </div>
+      <Footer />
+    </>
+
   );
 }
 

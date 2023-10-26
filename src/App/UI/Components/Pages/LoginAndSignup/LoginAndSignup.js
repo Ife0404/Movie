@@ -1,50 +1,92 @@
-import React from "react";
+import React, { useState } from "react";
 import './LoginAndSignup.css';
-import { HiUser } from "react-icons/hi2";
+import { AiFillGoogleCircle, AiFillApple, AiFillGithub } from 'react-icons/ai'
 import { MdEmail } from "react-icons/md";
 import { RiLockPasswordFill } from "react-icons/ri";
 import { useNavigate } from 'react-router-dom';
+import Button from "../../Button/Button";
 
 
 function LoginAndSignup() {
+
+    // const [isFormSubmitted, setIsFormSubmitted] = useState(false);
+
+    // // Function to handle form submission
+    // const handleSubmit = (e) => {
+    //     e.preventDefault();
+
+    //     // Check if the form is properly filled (you can add your own validation logic here)
+    //     if (!isFormValid()) {
+    //         setIsFormSubmitted(true);
+    //     } else {
+    //         // Continue with your form submission logic
+    //         // For example, navigate to another page
+    //     }
+    // };
+
+    // // Function to check if the form is properly filled (add your own validation logic here)
+    // const isFormValid = () => {
+    //     // Add your form validation logic here
+    //     // Return true if the form is valid; otherwise, return false
+    //     return true; // Modify this according to your validation logic
+    // };
+
     const navigate = useNavigate();
 
     const handleNavigation = () => {
         navigate('/home');
     };
 
+    const handleSignup = () => {
+        navigate('/signup')
+    }
+
     return (
         <div className="LoginAndSignup">
             <div className="container">
-                <div className="header">
-                    <div className="text">Sign Up</div>
-                    <div className="underline"></div>
-                </div>
-                <div className="inputs">
-                    <div className="input">
-                        <div className="image">
-                            <HiUser />
+                <div className="container-content">
+                    {/* {isFormSubmitted && !isFormValid() && (
+                        <div className="error-popup">
+                            Please fill in all required fields.
                         </div>
-                        <input type="text" placeholder="Name" />
+                    )} */}
+                    <div className="header">
+                        <h2 className="text">LOGIN</h2>
+                        <div className="underline"></div>
                     </div>
-                    <div className="input">
-                        <div className="image">
-                            <MdEmail />
+                    <div className="inputs">
+                        <div className="input">
+                            <div className="image">
+                                <MdEmail />
+                            </div>
+                            <input type="email" placeholder="Email Id" />
                         </div>
-                        <input type="email" placeholder="Email Id" />
+                        <div className="input">
+                            <div className="image">
+                                <RiLockPasswordFill />
+                            </div>
+                            <input type="password" placeholder="Password" />
+                        </div>
                     </div>
-                    <div className="input">
-                        <div className="image">
-                            <RiLockPasswordFill />
+                    <div className="forgot-password">Forgot password?</div>
+                    <div className="submit-container">
+                        <Button className="submit" text={"Login"} onClick={handleNavigation}>Login</Button>
+                        <Button className="submit" text={"Don't have account? Sign Up"} onClick={handleSignup}>Sign Up</Button>
+                    </div>
+
+                    <div className="social-networks">
+                        <div>
+                            <AiFillGoogleCircle />
                         </div>
-                        <input type="password" placeholder="Password" />
+                        <div>
+                            <AiFillApple />
+                        </div>
+                        <div>
+                            <AiFillGithub />
+                        </div>
                     </div>
                 </div>
-                <div className="forgot-password">Forgot password?</div>
-                <div className="submit-container">
-                    <div className="submit">Sign Up</div>
-                    <div className="submit" onClick={handleNavigation}>Login</div>
-                </div>
+
             </div>
         </div>
     )
