@@ -13,7 +13,7 @@ function Navbar() {
     };
 
     const handleSignupNavigation = () => {
-        navigate('/');
+        navigate('/signup');
     };
 
 

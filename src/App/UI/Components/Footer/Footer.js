@@ -43,7 +43,7 @@ function Footer() {
                     </div>
                     <div className='footer-main'>
                         <h4>Partners</h4>
-                        <a href='Google'>
+                        <a href='https://www.google.com/'>
                             <p>Google</p>
                         </a>
                     </div>
