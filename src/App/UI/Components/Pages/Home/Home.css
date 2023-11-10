@@ -1,5 +1,5 @@
 .Home {
-    background-image: url('https://wallpapers.com/images/featured/4k-spider-man-ph3fw6k03ddbmbmh.jpg');
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.87)30%, transparent 40%), url('https://wallpapers.com/images/featured/4k-spider-man-ph3fw6k03ddbmbmh.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -9,7 +9,7 @@
 
 
 
-.Home::before {
+/* .Home::before {
     content: "";
     position: absolute;
     top: 0;
@@ -19,7 +19,7 @@
     background: linear-gradient(to right, rgba(0, 0, 0, 0.25), transparent);
     z-index: 1;
     pointer-events: none;
-}
+} */
 
 .Home-content {
     position: absolute;
@@ -76,9 +76,24 @@
     bottom: -5px;
 }
 
+/* .carousel-container {
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.carousel-slide {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.carousel-slide.active {
+    opacity: 1;
+} */
 
 .straight {
-    font-weight: 600;
+    font-weight: lighter;
 }
 
 .Home-details .ratings {
@@ -114,6 +129,15 @@
     color: black;
     cursor: pointer;
 
+}
+
+.button1 {
+    display: flex;
+    align-items: center;
+}
+
+.react-icon svg {
+    margin-top: 10px;
 }
 
 .button2 {
@@ -153,8 +177,6 @@ button {
     display: flex;
 }
 
-
-
 .home-card {
     position: absolute;
     bottom: 0;
@@ -163,3 +185,44 @@ button {
     align-items: center;
     justify-content: center;
 }
+
+/* .image-carousel {
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.carousel-content {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    flex: 0 0 100%;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+.carousel-arrow.left {
+    left: 10px;
+}
+
+.carousel-arrow.right {
+    right: 10px;
+}
+
+.active {
+    opacity: 1;
+} */

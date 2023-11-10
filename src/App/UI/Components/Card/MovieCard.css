@@ -79,8 +79,8 @@
 
 .movie-card:hover {
     transform: scale(1.01);
-    animation: borderTop 0.5s linear;
     border-top: 4px solid #17cF97;
+    transition-duration: 0.2s;
 }
 
 /* 

@@ -22,24 +22,44 @@ export const navLinks = [
     }
 ]
 
-// export const imageSets = [
-//     [
-//         'https://fzmovies.host/imdb_images/The%20Cabin%20in%20the%20Woods.jpg',
-//         'https://fzmovies.host/imdb_images/The.Maze.Runner.2014.jpg',
-//         'https://fzmovies.host/imdb_images/Captain%20America%20The%20First%20Avenger.jpg',
-//         'https://fzmovies.host/imdb_images/Blended.2014.jpg',
-//         'https://fzmovies.host/imdb_images/Oldboy.jpg',
-//         'https://fzmovies.host/imdb_images/Clash%20of%20the%20Titans.jpg',
-//     ],
-//     [
-//         'https://fzmovies.host/imdb_images/The%20Time%20Travelers%20Wife.jpg',
-//         'https://fzmovies.host/imdb_images/Creed.jpg',
-//         'https://fzmovies.host/imdb_images/Captain.America.The.Winter.Soldier.jpg',
-//         'https://fzmovies.host/imdb_images/Need.For.Speed..2014.jpg',
-//         'https://fzmovies.host/imdb_images/Hours.jpg',
-//         'https://fzmovies.host/imdb_images/I.Am.Bolt.(2016).jpg',
-//     ],
-// ];
+export const imageSets = [
+    {
+        imageUrl: 'https://fzmovies.host/imdb_images/The%20Cabin%20in%20the%20Woods.jpg',
+    },
+    {
+        imageUrl: 'https://fzmovies.host/imdb_images/The.Maze.Runner.2014.jpg',
+    },
+    {
+        imageUrl: 'https://fzmovies.host/imdb_images/Captain%20America%20The%20First%20Avenger.jpg',
+    },
+    {
+        imageUrl: 'https://fzmovies.host/imdb_images/Blended.2014.jpg',
+    },
+    {
+        imageUrl: 'https://fzmovies.host/imdb_images/Oldboy.jpg',
+    },
+    {
+        imageUrl: 'https://fzmovies.host/imdb_images/Clash%20of%20the%20Titans.jpg',
+    },
+    {
+        imageUrl: 'https://fzmovies.host/imdb_images/The%20Time%20Travelers%20Wife.jpg',
+    },
+    {
+        imageUrl: 'https://fzmovies.host/imdb_images/Creed.jpg',
+    },
+    {
+        imageUrl: 'https://fzmovies.host/imdb_images/Captain.America.The.Winter.Soldier.jpg',
+    },
+    {
+        imageUrl: 'https://fzmovies.host/imdb_images/Need.For.Speed..2014.jpg',
+    },
+    {
+        imageUrl: 'https://fzmovies.host/imdb_images/Hours.jpg',
+    },
+    {
+        imageUrl: 'https://fzmovies.host/imdb_images/I.Am.Bolt.(2016).jpg',
+    },
+];
 
 
 export const movies = [

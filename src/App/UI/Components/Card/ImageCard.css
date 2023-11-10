@@ -19,5 +19,6 @@
 
 .image-card:hover {
     transform: scale(1.05);
-    animation: borderTop 0.5s linear;
+    /* animation: 0.5s linear; */
+    transition-duration: 0.5s;
 }
