@@ -1,0 +1,152 @@
+.Navbar {
+    margin-top: -16px;
+}
+
+.nav-but {
+    display: flex;
+    background: #1b2430;
+    padding: 10px 80px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.Navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+.navbarHidden {
+    display: none;
+}
+
+.Navbar li a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+/* Add styles for the navbar links */
+.Navbar ul li a:hover,
+.Navbar ul li a.active {
+    color: #17cf97;
+}
+
+/* Add styles for the hover effect (underlining) */
+.Navbar ul li a:hover::after,
+.Navbar ul li a.active::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #17cf97;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    /* Changed this from 20px to 0 to align with the link text */
+    transition: all 0.3s;
+    /* Added a transition for smooth animation */
+}
+
+/* Optional: Remove the underline when not hovered */
+.Navbar ul li a::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: transparent;
+    /* Change to transparent */
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transition: all 0.3s;
+}
+
+/* Optional: Add an underline for active links by default */
+.Navbar ul li a.active::after {
+    background: #17cf97;
+}
+
+.Navbar img {
+    transition-duration: 0.5s;
+}
+
+.Navbar img:hover {
+    transform: scale(1.1);
+}
+
+
+/* .mobile i {
+    color: #fff;
+} */
+
+/* HiddenNavbar.css */
+
+@media (max-width: 450px) {
+
+    .navbarHidden {
+        display: contents;
+    }
+
+    .navbar {
+        background-color: #1b2430;
+        color: #fff;
+        padding: 5px;
+        margin-top: -135px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 150px;
+    }
+
+    .menu-icon {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    .bar {
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        margin: 3px 0;
+        transition: transform 0.4s ease-in-out;
+    }
+
+    .nav-links {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 1.2rem;
+        transform: translateY(-100%);
+        transition: transform 0.4s ease-in-out;
+    }
+
+    .nav-links.open {
+        transform: translateY(0);
+    }
+
+    .menu-icon.open .bar:first-child {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .menu-icon.open .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-icon.open .bar:last-child {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+}

@@ -1,9 +1,11 @@
 import React from 'react'
+import IndexRouter from './../Route/IndexRouter'
+
 
 const AppEntry = () => {
     return (
         <div>
-            <p>AppEntry</p>
+            <IndexRouter />
         </div>
     )
 }

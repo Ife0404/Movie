@@ -1,0 +1,148 @@
+.Signup {
+    background: linear-gradient(#17c497 10%, #03fab8 30%, #05e7ab 50%);
+}
+
+.vessel-content {
+    justify-content: center;
+    align-items: center;
+}
+
+.vessel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 600px;
+    max-height: 100vh;
+    background: rgb(238, 224, 206);
+    padding-bottom: 31px;
+    border-radius: 10px;
+}
+
+.vessel-content .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin-top: 5px;
+    /* font-family: 32px Mukta, sans-serif; */
+}
+
+.word {
+    color: #17c497;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.underline {
+    margin-top: -25px;
+    width: 45px;
+    height: 6px;
+    background: #17c497;
+    border-radius: 9px;
+}
+
+.Inputs {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Inputs .inputs {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 420px;
+    height: 50px;
+    background: #eaeaea;
+    border-radius: 6px;
+}
+
+
+
+.inputs input {
+    height: 58px;
+    width: 405px;
+    background: transparent;
+    border: none;
+    font-size: 19px;
+    outline-color: #17c497;
+}
+
+.form-container {
+    margin-top: 30px;
+}
+
+.form-container Button{
+    justify-content: center;
+    align-self: center;
+    margin: 10px auto;
+}
+
+.social-networks {
+    margin-top: 15px;
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 15px;
+    justify-content: center;
+    align-self: center;
+}
+
+.social-networks div {
+    font-size: 2rem;
+
+}
+
+@media (max-width: 550px) {
+
+    .title {
+        font-size: 30px;
+        font-weight: 450px;
+    }
+
+    .underline {
+        width: 45px;
+        height: 4px;
+        background: #17c497;
+        border-radius: 9px;
+    }
+
+    .vessel {
+        max-width: 300px;
+        max-height: 500px;
+    }
+
+    .form-container {
+        gap: 15px;
+    }
+
+    .form-container .submit {
+        width: 100px;
+        height: 29px;
+        border-radius: 27px;
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+    .Inputs {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .inputs {
+        width: 200px;
+        height: 50px;
+        border-radius: 6px;
+    }
+
+    .inputs input {
+        height: 50px;
+        width: 132px;
+        border: none;
+        font-size: 13px;
+    }
+}
