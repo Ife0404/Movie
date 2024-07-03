@@ -14,10 +14,13 @@
     align-items: center;
     margin: auto;
     max-width: 600px;
-    max-height: 100vh;
+    height: 100vh;
     background: rgb(238, 224, 206);
-    padding-bottom: 31px;
-    border-radius: 10px;
+}
+
+.vessel-content {
+    justify-content: center;
+    align-items: center;
 }
 
 .vessel-content .title {
@@ -26,7 +29,8 @@
     align-items: center;
     gap: 5px;
     margin-top: 5px;
-    /* font-family: 32px Mukta, sans-serif; */
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .word {
@@ -44,7 +48,7 @@
 }
 
 .Inputs {
-    margin-top: 30px;
+    margin-top: 5px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -58,6 +62,7 @@
     height: 50px;
     background: #eaeaea;
     border-radius: 6px;
+    
 }
 
 
@@ -66,9 +71,9 @@
     height: 58px;
     width: 405px;
     background: transparent;
-    border: none;
     font-size: 19px;
-    outline-color: #17c497;
+    border: none;
+    outline: none;
 }
 
 .form-container {

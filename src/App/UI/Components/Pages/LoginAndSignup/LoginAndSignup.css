@@ -2,10 +2,6 @@
     background: linear-gradient(#17c497 10%, #03fab8 30%, #05e7ab 50%);
 }
 
-.container-content {
-    justify-content: center;
-    align-items: center;
-}
 
 .container {
     display: flex;
@@ -14,10 +10,13 @@
     align-items: center;
     margin: auto;
     max-width: 600px;
-    max-height: 100vh;
+    height: 100vh;
     background: rgb(238, 224, 206);
-    padding-bottom: 60px;
-    border-radius: 10px;
+}
+
+.container-content {
+    justify-content: center;
+    align-items: center;
 }
 
 .header {
@@ -27,7 +26,6 @@
     gap: 5px;
     width: 100%;
     margin-top: 5px;
-    /* font-family: 32px Mukta, sans-serif; */
 }
 
 .text {
